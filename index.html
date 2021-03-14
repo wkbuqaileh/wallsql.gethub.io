@@ -2,11 +2,13 @@
 <html>
     
     <head>
-        <title>Waleed K Buqaileh's Resume</title>
+        <title>Waleed's Resume</title>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GETTING STARTED WITH BRACKETS</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        
+        
+        
+
         
     </head>
     <body>
@@ -16,17 +18,34 @@
         -->
   <br><br>
         
+	<div>
+
+	TYPE COLOR NAME IN INPUT BOX:
+
+	<input id='color'></input>
+	<button onclick='resumecolor()'>CHANGE COLOR OF SUMMARY</button>
+
+
+
+	</div>
+        
+        
   <header>
       <h1>Waleed K. Buqaileh</h1>
-      <h3>4831 Lake View Drive, Peninsula, Ohio 44264</h3>
-      <h3>Mobile: (440) 783-2774</h3>
-      <h3>wkbuqaileh@gmail.com</h3>
+      <p>4831 Lake View Drive, Peninsula, Ohio 44264</p>
+      <p>Mobile: (440) 783-2774</p>
+      <a href="mailto: wkbuqaileh@gmail.com">wkbuqaileh@gmail.com</a>
+      <br>
   </header>
+
   <hr />
-  <main>   
+  <main>  
+      
+  <section class="summary">
   <h2>Summary:</h2>
-  <p>Focused and highly motivated Business Intelligence Developer with a proven record of contribution in system analysis, design, development, and implementation.  Specialized expertise in relational Databases in financial and insurance applications. Strong written and verbal communication skills.</p>
-        
+  <p id="summary">Focused and highly motivated Business Intelligence Developer with a proven record of contribution in system analysis, design, development, and implementation.  Specialized expertise in relational Databases in financial and insurance applications. Strong written and verbal communication skills.</p>
+  </section>
+      
   <hr />
   <section class="skills">
   <h2>Technical Skills:</h2>
@@ -41,12 +60,14 @@
   </ul>   
   </section> 
       
+  <hr />
+      
   <section class="Experience">
   <h2>Professional Experience:</h2>
       
   <h3>Progressive, Mayfield Hts, OH</h3>
-  <h3>Dec. 2017 - Present</h3>
-  <h3>Business Intelligence Developer Senior</h3>
+  <p>Dec. 2017 - Present</p>
+  <p>Business Intelligence Developer Senior</p>
        
   <ul>
     <li>Developed and maintained Hadoop Hive tables and queries to move big data using T-SQL Stored Procedures into PDW data warehouses.</li>
@@ -58,9 +79,48 @@
   </ul>
   </section>  
       
-  </main>      
       
+  <hr />
+      
+  <section class="Eduction">
+  <h2>Education / Training:</h2>
+      
+  <p>Kent State University, Kent, OH</p>
+  <p>Fall 2018 - Present</p>
+  <p>B.S. in Software Development</p>
+  <br>
+  </section> 
+      
+  <hr />
+      
+      
+
+      
+      
+      
+      
+      
+      
+  </main>      
+
     </body>
+  <footer>
+      <p>Mobile: (440) 783-2774</p>
+      <a href="mailto: wkbuqaileh@gmail.com">wkbuqaileh@gmail.com</a>
+  </footer>
+    
+
+
+  <script>
+      
+  function resumecolor(){
+	
+	box = document.getElementById('color').value;
+	document.getElementById('summary').style.color = box;
+	
+	};
+      
+  </script>
 </html>
 <!--
 
